@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clefairy Splash Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b8c",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#221019",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-effect {
+            background: rgba(238, 43, 140, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(238, 43, 140, 0.2);
+        }
+        .gradient-bg {
+            background: radial-gradient(circle at top left, #3d1a2d 0%, #221019 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col gradient-bg items-center justify-center p-6">
+<!-- Background Accents for Depth -->
+<div class="absolute top-[-10%] right-[-10%] w-64 h-64 bg-primary/20 rounded-full blur-[80px]"></div>
+<div class="absolute bottom-[-5%] left-[-5%] w-80 h-80 bg-primary/10 rounded-full blur-[100px]"></div>
+<!-- Main Logo Container -->
+<div class="z-10 flex flex-col items-center gap-8 w-full max-w-sm">
+<!-- Shield Logo with Woman's Silhouette (Glassmorphism) -->
+<div class="relative flex items-center justify-center w-48 h-48">
+<div class="absolute inset-0 bg-primary/30 rounded-full blur-3xl opacity-50"></div>
+<div class="glass-effect rounded-full p-8 flex items-center justify-center shadow-2xl">
+<div class="bg-primary flex items-center justify-center rounded-full p-6 shadow-lg shadow-primary/40">
+<span class="material-symbols-outlined text-white text-7xl" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48">shield_with_heart</span>
+</div>
+</div>
+</div>
+<!-- Branding Text -->
+<div class="flex flex-col items-center gap-2 text-center">
+<h1 class="text-4xl font-bold tracking-tight text-white">
+                    Clefairy
+                </h1>
+<p class="text-primary font-medium text-lg tracking-wide uppercase">
+                    Women's Safety App
+                </p>
+</div>
+<!-- Tagline and Progress Indicator -->
+<div class="w-full flex flex-col items-center gap-12 mt-12">
+<div class="flex flex-col gap-4 w-full px-8">
+<div class="flex justify-between items-center text-sm font-medium text-primary/80">
+<span>Securing connection...</span>
+<span>75%</span>
+</div>
+<div class="h-1.5 w-full bg-primary/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 75%;"></div>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2">
+<p class="text-slate-400 text-sm font-normal">
+                        Your safety, our priority
+                    </p>
+<div class="flex gap-1 items-center">
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1">verified_user</span>
+<span class="text-xs text-slate-500 uppercase tracking-tighter">Encrypted &amp; Secure</span>
+</div>
+</div>
+</div>
+</div>
+<!-- IOS Bottom Indicator Bar -->
+<div class="absolute bottom-2 w-32 h-1.5 bg-slate-500/20 rounded-full"></div>
+</div>
+</body></html>

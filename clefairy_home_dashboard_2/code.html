@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Profile Dashboard - Clefairy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b8c",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#221019",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "2xl": "2rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer components {
+            .glass {
+                background: rgba(238, 43, 140, 0.08);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                border: 1px solid rgba(238, 43, 140, 0.2);
+            }
+            .glass-dark {
+                background: rgba(34, 16, 25, 0.7);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border: 1px solid rgba(238, 43, 140, 0.15);
+            }
+            .pink-gradient {
+                background: linear-gradient(135deg, #221019 0%, #3d1629 100%);
+            }
+        }
+        body {
+            min-height: 100dvh;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden pb-24">
+<header class="pt-12 pb-8 px-6 text-center flex flex-col items-center">
+<div class="relative">
+<div class="size-28 rounded-full p-1 bg-gradient-to-tr from-primary to-pink-400">
+<div class="size-full rounded-full border-4 border-background-dark overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Isha Sharma profile portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDSTjocatscqtRPwDTp6hyNzxT-3LUazCWqk31-PSL9MHhejzQ7c38oB9xhR3PaUygUy_T5s2XPKlhfRyt80uISvGh9Yd1ULMItT97-MtK3jDG7t666Ywtc8lqM14vr_CquMq3-NPCVmQDWUpZDpI2rm0a4vlAQiBVb0xWTed8TXcFpedNcbDoKpch47snPtiEzaRcOaXcsB9hsv1jsAfNrvmJ4qFVLjSCzqH2JxQGeVTT3ZWujmsleyQGrTkgyX_vcBo-PtBtJXs"/>
+</div>
+</div>
+<div class="absolute bottom-1 right-1 bg-blue-500 text-white size-7 rounded-full flex items-center justify-center border-2 border-background-dark shadow-lg">
+<span class="material-symbols-outlined text-[16px] font-bold">verified</span>
+</div>
+</div>
+<h1 class="mt-4 text-2xl font-bold">Isha Sharma</h1>
+<p class="text-primary/80 text-sm font-medium">Verified Safety Member</p>
+<div class="mt-6 flex gap-3 w-full max-w-xs">
+<div class="flex-1 glass py-3 rounded-xl text-center">
+<p class="text-[10px] uppercase tracking-wider text-slate-400">Safety Score</p>
+<p class="text-lg font-bold text-primary">98%</p>
+</div>
+<div class="flex-1 glass py-3 rounded-xl text-center">
+<p class="text-[10px] uppercase tracking-wider text-slate-400">Contacts</p>
+<p class="text-lg font-bold text-primary">12</p>
+</div>
+</div>
+</header>
+<main class="px-6 space-y-6">
+<h2 class="text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 px-1">Safety Dashboard</h2>
+<div class="grid grid-cols-2 gap-4">
+<button class="glass p-5 rounded-2xl flex flex-col items-center gap-3 active:scale-95 transition-transform border-red-500/30 bg-red-500/5">
+<div class="size-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-500">
+<span class="material-symbols-outlined text-3xl fill-1">sos</span>
+</div>
+<p class="font-bold text-sm">SOS</p>
+</button>
+<button class="glass p-5 rounded-2xl flex flex-col items-center gap-3 active:scale-95 transition-transform">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<p class="font-bold text-sm">Track Me</p>
+</button>
+<button class="glass p-5 rounded-2xl flex flex-col items-center gap-3 active:scale-95 transition-transform">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">call</span>
+</div>
+<p class="font-bold text-sm">Helpline</p>
+</button>
+<button class="glass p-5 rounded-2xl flex flex-col items-center gap-3 active:scale-95 transition-transform">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">mic</span>
+</div>
+<p class="font-bold text-sm">Record</p>
+</button>
+<button class="glass p-5 rounded-2xl flex flex-col items-center gap-3 active:scale-95 transition-transform">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">sms</span>
+</div>
+<p class="font-bold text-sm">SMS</p>
+</button>
+<button class="glass p-5 rounded-2xl flex flex-col items-center gap-3 active:scale-95 transition-transform">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">contact_support</span>
+</div>
+<p class="font-bold text-sm">App Support</p>
+</button>
+</div>
+<button class="w-full glass-dark p-4 rounded-2xl flex items-center justify-between group active:scale-[0.98] transition-all">
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300">
+<span class="material-symbols-outlined">settings</span>
+</div>
+<span class="font-bold">Account Settings</span>
+</div>
+<span class="material-symbols-outlined text-slate-500 group-hover:translate-x-1 transition-transform">chevron_right</span>
+</button>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 glass-dark border-t border-primary/10 px-4 py-2 z-50">
+<div class="flex justify-between items-center max-w-lg mx-auto">
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-[10px] font-bold">Updates</span>
+</a>
+<div class="flex flex-col items-center -mt-8">
+<button class="size-14 rounded-full bg-primary text-white shadow-lg shadow-primary/30 flex items-center justify-center ring-4 ring-background-dark">
+<span class="material-symbols-outlined text-3xl fill-1">sos</span>
+</button>
+<span class="text-[10px] font-bold text-primary mt-1">SOS</span>
+</div>
+<a class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[10px] font-bold">Communities</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">person</span>
+<span class="text-[10px] font-bold">You</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

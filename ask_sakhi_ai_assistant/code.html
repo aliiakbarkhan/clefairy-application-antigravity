@@ -1,0 +1,180 @@
+<html class="dark" lang="en"><head><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">```html
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ask Sakhi AI Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b8c",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#221019",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .glass {
+            background: rgba(238, 43, 140, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(238, 43, 140, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+
+
+<div class="relative flex min-h-screen w-full flex-col max-w-[430px] mx-auto bg-gradient-to-b from-background-dark via-[#2d1421] to-background-dark shadow-2xl">
+<header class="sticky top-0 z-50 flex items-center bg-background-dark/80 backdrop-blur-md p-4 border-b border-primary/10">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-slate-100">chevron_left</span>
+</div>
+<div class="flex-1 text-center">
+<h2 class="text-slate-100 text-lg font-bold leading-tight tracking-tight">Ask Sakhi AI</h2>
+<div class="flex items-center justify-center gap-1">
+<div class="size-1.5 rounded-full bg-green-500 animate-pulse"></div>
+<p class="text-[10px] text-primary/70 uppercase font-bold tracking-widest">Online</p>
+</div>
+</div>
+<div class="flex size-10 items-center justify-center rounded-full hover:bg-primary/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-slate-100">more_vert</span>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-4 space-y-6 pb-40">
+<div class="flex items-end gap-3">
+<div class="size-9 shrink-0 rounded-full bg-gradient-to-tr from-primary to-[#ff6eb4] flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-white text-xl">face_3</span>
+</div>
+<div class="flex flex-col gap-1.5 items-start max-w-[80%]">
+<p class="text-primary/60 text-[11px] font-bold uppercase tracking-wider ml-1">Sakhi</p>
+<div class="glass-card rounded-xl rounded-bl-none px-4 py-3 text-slate-100 text-[15px] leading-relaxed">
+                        Hello! I'm Sakhi, your AI assistant. How can I help you stay safe today?
+                    </div>
+</div>
+</div>
+<div class="flex items-end gap-3 justify-end">
+<div class="flex flex-col gap-1.5 items-end max-w-[80%]">
+<p class="text-slate-400 text-[11px] font-bold uppercase tracking-wider mr-1">You</p>
+<div class="bg-primary rounded-xl rounded-br-none px-4 py-3 text-white text-[15px] leading-relaxed shadow-lg shadow-primary/20">
+                        Where is the nearest One Stop Center (OSC)?
+                    </div>
+</div>
+<div class="size-9 shrink-0 rounded-full bg-slate-700 flex items-center justify-center overflow-hidden border border-white/10">
+<div class="w-full h-full bg-slate-600"></div>
+</div>
+</div>
+<div class="flex items-end gap-3">
+<div class="size-9 shrink-0 rounded-full bg-gradient-to-tr from-primary to-[#ff6eb4] flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-white text-xl">face_3</span>
+</div>
+<div class="flex flex-col gap-1.5 items-start w-full">
+<p class="text-primary/60 text-[11px] font-bold uppercase tracking-wider ml-1">Sakhi</p>
+<div class="glass-card rounded-xl rounded-bl-none px-4 py-3 text-slate-100 text-[15px] mb-3">
+                        I've found a One Stop Center (OSC) very close to your current location:
+                    </div>
+<div class="w-full glass-card rounded-2xl overflow-hidden border border-primary/20 shadow-xl">
+<div class="relative h-32 w-full bg-slate-800">
+<div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzFrw54VLm1BuN6UBsnR90VKj16v2zkUBwL4Zr3bR4VFA23OwtPL4QXSOE-Us073pKdDrVxiQW9Nt8Js4F62Ww7YMLW2ujWCH3mTh7hfZUTfYfTuh1U-_4mj9itq-GteUlIkEVbzXxsSU_-DoBQwgk993AeYeVES_gh3SWFj2sGBQ3cHybBdPwWgk8uNxwX8HrQ92i2wP8QDaFrKPRf1YHmEuGfY32-gRigu9e_giOUlWVRXfIZLEQP5PCSIJlgIGjby0Co0ag2Yo');"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary size-4 rounded-full border-2 border-white animate-ping"></div>
+<span class="material-symbols-outlined text-primary absolute text-3xl">location_on</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-white font-bold text-base">OSC Mumbai North</h3>
+<span class="text-[10px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full border border-green-500/30">OPEN 24/7</span>
+</div>
+<p class="text-slate-400 text-sm mt-1">S.V. Road, Santacruz West, Mumbai</p>
+<p class="text-primary text-xs font-semibold mt-1">0.5 miles • 8 mins away</p>
+</div>
+<div class="flex gap-2 pt-2 border-t border-white/5">
+<button class="flex-1 bg-primary text-white text-sm font-bold py-2.5 rounded-lg flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm">near_me</span> Directions
+                                </button>
+<button class="size-10 glass-card text-white rounded-lg flex items-center justify-center active:scale-95 transition-transform border border-white/10">
+<span class="material-symbols-outlined text-xl">call</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-[84px] left-0 right-0 max-w-[430px] mx-auto p-4 bg-gradient-to-t from-background-dark via-background-dark/95 to-transparent z-40">
+<div class="glass rounded-2xl p-1 flex items-center gap-2 border border-white/10 shadow-2xl">
+<button class="size-11 shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+<div class="flex-1">
+<input class="w-full bg-transparent border-none text-slate-100 placeholder-slate-500 focus:ring-0 text-[15px] py-2" placeholder="Type a message..." type="text"/>
+</div>
+<button class="size-11 shrink-0 flex items-center justify-center text-slate-400">
+<span class="material-symbols-outlined">mic</span>
+</button>
+<button class="size-11 shrink-0 flex items-center justify-center bg-primary text-white rounded-xl shadow-lg shadow-primary/30">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+<nav class="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto bg-background-dark/95 backdrop-blur-xl border-t border-white/10 px-4 pb-6 pt-3 z-50">
+<div class="flex items-center justify-between">
+<a class="flex flex-col items-center gap-1 min-w-[64px] text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-[10px] font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 min-w-[64px] text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+<span class="text-[10px] font-semibold">Updates</span>
+</a>
+<div class="relative -mt-8">
+<a class="flex flex-col items-center justify-center size-16 bg-red-600 rounded-full shadow-lg shadow-red-600/40 border-4 border-background-dark active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined text-white text-3xl font-variation-fill">report_problem</span>
+</a>
+<span class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-red-500 uppercase tracking-wider">SOS</span>
+</div>
+<a class="flex flex-col items-center gap-1 min-w-[64px] text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">groups</span>
+<span class="text-[10px] font-semibold">Communities</span>
+</a>
+<a class="flex flex-col items-center gap-1 min-w-[64px] text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="text-[10px] font-semibold">You</span>
+</a>
+</div>
+</nav>
+</div>
+
+```</body></html>

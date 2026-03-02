@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clefairy Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ee2b8c",
+              "background-light": "#f8f6f7",
+              "background-dark": "#221019",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased h-screen overflow-hidden">
+<!-- Main Container with iOS Safe Area feel -->
+<div class="relative flex h-full w-full flex-col bg-background-light dark:bg-background-dark max-w-md mx-auto overflow-hidden">
+<!-- Status Bar & Top App Bar -->
+<div class="flex items-center px-6 pt-12 pb-4 justify-between">
+<div class="w-10"></div> <!-- Placeholder for symmetry -->
+<h2 class="text-primary text-xl font-bold leading-tight tracking-tight">Clefairy</h2>
+<div class="w-10 flex justify-end">
+<span class="material-symbols-outlined text-slate-400">help_outline</span>
+</div>
+</div>
+<!-- Illustration Section with Glassmorphism -->
+<div class="flex-1 flex flex-col items-center justify-center px-6 @container">
+<div class="relative w-full aspect-square max-w-[320px] mb-8">
+<!-- Abstract Gradient Background for Illustration -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-purple-500/20 rounded-full blur-3xl opacity-50 animate-pulse"></div>
+<!-- Illustration Placeholder Container -->
+<div class="relative z-10 w-full h-full bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex items-center justify-center">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="A friendly woman feeling secure and smiling confidently" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTWPa14SOLtcJn0EVQEqiG28ULGe9zwoRouXR2RGDypSxV6DqagScpqM6Sl9iZTwzLk5FU9ZG6ibUO6Ai8bgwtt_iBftkRlbUje72tBhjaj5ItBbE2DMJlHy00XZTzDipjkTR5KNK0DO0h3Ekrvs-vzxqy33Pm4Tl1O24soDMw-fkZfNNJYzSQiZNRERW5kxIMPF3xv8AZiqJm0YYwVa3SOyg9CagXlLoZOyuySZJITvGqY8o5IkY82c5iPWYjOKHfjkN-MTKUMqo");'>
+</div>
+</div>
+</div>
+<!-- Text Content -->
+<div class="text-center space-y-4 max-w-xs mx-auto">
+<h1 class="text-slate-900 dark:text-white text-3xl font-bold tracking-tight">Your Safety, <br/><span class="text-primary">Our Priority</span></h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed">
+                    Protecting your data using advanced verification and end-to-end encryption.
+                </p>
+</div>
+</div>
+<!-- Bottom Controls -->
+<div class="px-6 pb-12 pt-4 flex flex-col items-center gap-8">
+<!-- Pagination Indicators -->
+<div class="flex flex-row items-center justify-center gap-2">
+<div class="h-1.5 w-6 rounded-full bg-primary"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-primary/30"></div>
+<div class="h-1.5 w-1.5 rounded-full bg-primary/30"></div>
+</div>
+<!-- Get Started Button -->
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-full shadow-lg shadow-primary/20 transition-all active:scale-95 flex items-center justify-center gap-2">
+<span>Get Started</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<!-- Login Link -->
+<p class="text-sm text-slate-500 dark:text-slate-500">
+                Already have an account? <a class="text-primary font-semibold" href="#">Log In</a>
+</p>
+</div>
+<!-- Decorative Soft Gradients (Glassmorphism Accents) -->
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/20 rounded-full blur-[80px] -z-10"></div>
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-purple-600/10 rounded-full blur-[80px] -z-10"></div>
+</div>
+</body></html>

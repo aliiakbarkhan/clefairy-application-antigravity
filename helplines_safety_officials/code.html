@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b8c",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#1a0b12",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .glass {
+            background: rgba(238, 43, 140, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(238, 43, 140, 0.1);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(238, 43, 140, 0.1);
+        }
+        .nav-glass {
+            background: rgba(26, 11, 18, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(238, 43, 140, 0.1);
+        }
+        .light .nav-glass {
+            background: rgba(248, 246, 247, 0.8);
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-slate-900 dark:text-slate-100 flex size-12 shrink-0 items-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Helplines &amp; Safety Officials</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex items-center justify-center rounded-xl h-12 bg-transparent text-primary">
+<span class="material-symbols-outlined">info</span>
+</button>
+</div>
+</div>
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full glass">
+<div class="text-primary flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden border-none bg-transparent focus:ring-0 h-full placeholder:text-primary/50 px-4 text-base font-normal leading-normal text-slate-900 dark:text-slate-100" placeholder="Search officials or services"/>
+</div>
+</label>
+</div>
+<div class="pb-3">
+<div class="flex border-b border-primary/10 px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-primary pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Helplines</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-slate-500 dark:text-slate-400 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Officials</p>
+</a>
+</div>
+</div>
+<div class="flex-1 px-4 overflow-y-auto pb-32">
+<div class="flex items-center justify-between py-4">
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">National Helplines</h3>
+<span class="text-primary text-xs font-semibold">Verified</span>
+</div>
+<div class="space-y-3">
+<div class="glass-card rounded-xl p-4 flex items-center justify-between border-l-4 border-l-primary">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">emergency</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100">Emergency Response</p>
+<p class="text-2xl font-black text-primary tracking-wider">112</p>
+</div>
+</div>
+<button class="size-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+<div class="glass-card rounded-xl p-4 flex items-center justify-between border-l-4 border-l-primary/60">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">female</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100">Women Helpline</p>
+<p class="text-2xl font-black text-primary/80 tracking-wider">1091</p>
+</div>
+</div>
+<button class="size-12 bg-primary/80 rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em] py-6">Safety Officials</h3>
+<div class="grid grid-cols-1 gap-3 pb-8">
+<div class="glass-card rounded-xl p-4">
+<div class="flex items-start justify-between">
+<div class="flex gap-4">
+<div class="size-10 rounded-lg bg-primary/5 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">shield_person</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100 leading-none mb-1">Protection Officer</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Domestic Violence Support</p>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded-lg glass text-primary"><span class="material-symbols-outlined text-sm">mail</span></button>
+<button class="p-2 rounded-lg glass text-primary"><span class="material-symbols-outlined text-sm">call</span></button>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-xl p-4">
+<div class="flex items-start justify-between">
+<div class="flex gap-4">
+<div class="size-10 rounded-lg bg-primary/5 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">policy</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100 leading-none mb-1">Anti-Trafficking Unit</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Regional Specialized Squad</p>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded-lg glass text-primary"><span class="material-symbols-outlined text-sm">map</span></button>
+<button class="p-2 rounded-lg glass text-primary"><span class="material-symbols-outlined text-sm">call</span></button>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-xl p-4">
+<div class="flex items-start justify-between">
+<div class="flex gap-4">
+<div class="size-10 rounded-lg bg-primary/5 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-slate-100 leading-none mb-1">One Stop Centre (Sakhi)</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Medical &amp; Legal Support</p>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded-lg glass text-primary"><span class="material-symbols-outlined text-sm">info</span></button>
+<button class="p-2 rounded-lg glass text-primary"><span class="material-symbols-outlined text-sm">call</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 z-30 nav-glass pb-8 pt-3 px-6">
+<div class="flex items-center justify-between max-w-md mx-auto relative">
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="text-slate-400 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">home</span>
+</div>
+<span class="text-[10px] font-medium text-slate-400 group-hover:text-primary">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="text-slate-400 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">notifications</span>
+</div>
+<span class="text-[10px] font-medium text-slate-400 group-hover:text-primary">Updates</span>
+</a>
+<div class="relative -top-8">
+<button class="bg-primary size-16 rounded-full flex items-center justify-center shadow-lg shadow-primary/40 border-4 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-white text-3xl font-bold" style="font-variation-settings: 'FILL' 1">emergency_share</span>
+</button>
+<span class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-primary">SOS</span>
+</div>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="text-slate-400 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">groups</span>
+</div>
+<span class="text-[10px] font-medium text-slate-400 group-hover:text-primary">Communities</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="text-slate-400 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">account_circle</span>
+</div>
+<span class="text-[10px] font-medium text-slate-400 group-hover:text-primary">You</span>
+</a>
+</div>
+</div>
+</div>
+
+</body></html>

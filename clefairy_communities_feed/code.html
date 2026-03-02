@@ -1,0 +1,229 @@
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b8c",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#221019",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            min-height: max(884px, 100dvh);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-screen w-full flex-col overflow-hidden max-w-md mx-auto bg-gradient-to-b from-background-dark to-[#3a1a2b]">
+<header class="flex items-center justify-between px-6 pt-12 pb-4 bg-background-dark/80 backdrop-blur-md sticky top-0 z-10">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full border-2 border-primary overflow-hidden">
+<img alt="Profile image" data-alt="Portrait of a smiling young woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFOxQM5kpeyq-a-paINNv-ujmj-Jm2K-QlJo3Mf8SZipJ72xiqnaJMX1yfRk6RBC8Kfo5Qu4Kdf0BrsIMC1pNRHywCXq2iGiItYyu1nzS-lfdTCnwNvfY393qRMUhlxRo9z7bnwUHGz9wCiPPvLGTIG2Dacw_tdg3-NFhTxOAODhzM0aCZbMT9-UCaVMXlUzjmlfkxXWS5UEo3UHG1JVjvvepe0IEfsBKP3saf3zgBOHlseVX4J6M3gW6drEHXvQmf4dEYOwDICfA"/>
+</div>
+<div>
+<h1 class="text-lg font-bold leading-tight">Communities</h1>
+<p class="text-xs text-primary font-medium">Safe Space Feed</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-full bg-slate-800/50 text-slate-100">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</button>
+<button class="p-2 rounded-full bg-slate-800/50 text-slate-100 relative">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-primary rounded-full border-2 border-background-dark"></span>
+</button>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto no-scrollbar pb-32">
+<div class="flex gap-3 px-6 py-4 overflow-x-auto no-scrollbar">
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-5 shadow-lg shadow-primary/20">
+<p class="text-white text-sm font-semibold">For You</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-800/50 backdrop-blur-md px-5 border border-slate-700">
+<p class="text-slate-300 text-sm font-medium">Safety Tips</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-800/50 backdrop-blur-md px-5 border border-slate-700">
+<p class="text-slate-300 text-sm font-medium">Verified Stories</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-800/50 backdrop-blur-md px-5 border border-slate-700">
+<p class="text-slate-300 text-sm font-medium">Group Rides</p>
+</div>
+</div>
+<div class="px-6 py-2">
+<div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-4 flex gap-4">
+<div class="size-10 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_note</span>
+</div>
+<div class="flex-1">
+<textarea class="w-full bg-transparent border-none focus:ring-0 p-0 text-slate-100 placeholder:text-slate-500 text-sm resize-none" placeholder="Share a safe experience..." rows="1"></textarea>
+<div class="flex items-center justify-between mt-3">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-slate-400 text-[20px] cursor-pointer">image</span>
+<span class="material-symbols-outlined text-slate-400 text-[20px] cursor-pointer">location_on</span>
+<span class="material-symbols-outlined text-slate-400 text-[20px] cursor-pointer">tag</span>
+</div>
+<button class="bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full">Share</button>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-6 p-6">
+<article class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl overflow-hidden shadow-xl">
+<div class="p-5">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<img alt="User avatar" class="size-10 rounded-full object-cover" data-alt="Profile picture of a stylish woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEdNlX8xmqTNSCXNN3luKWTY1JedlD-FMuS28uWjhVgrb66VVbtOICPsvXm89-mUlgRBDfvypNzweXRKrnvLbgbc7qOrJ5by4_GJlKy06mN1h9IXDl-0dGFx3D6Lzk0ebMf6V_wRZJtC_e2hPEO-JSa2MAR3Jt1vUflbnGxudsEjTJojzpiwyhPStzzlcNez_EH_3EHk8C0NyYpFE9FLz3m6zQH38N6S8dJtR1KUu6rwgVlRL0YeQcGPZRkXXvsPZYw4R1c0w1aP4"/>
+<div>
+<p class="text-sm font-bold">Elena Woods</p>
+<p class="text-[11px] text-slate-400">@elenasafewalks • 45m ago</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400">more_horiz</span>
+</div>
+<p class="text-sm leading-relaxed mb-4">
+                            Found a really well-lit shortcut through the downtown park today! There's an emergency call station every 50 meters now. Feeling much safer walking back from late shifts. 🌙✨
+                        </p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs font-semibold text-primary">#SafeCommute</span>
+<span class="text-xs font-semibold text-primary">#CityUpdate</span>
+</div>
+<div class="w-full h-48 rounded-2xl overflow-hidden mb-4">
+<img alt="Night park" class="w-full h-full object-cover" data-alt="A brightly lit modern city park path at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6fik4WK9AphjHe6E_pUU4OK4PX7TyiuKz2o0oaTlzOec88FCRf2IDob88jM-LcJEA1lUsbNNHR9hO0mMuUaTJmSH6WgsB9hIkqLkoNYGyUrvyl6Ku8HiPD6lN6f_z2IpuEt6yCZ6qqNV1G7BuyVdGIvn_zxEoK48ZpcI_LtS9_xHIJ7i056Ve6Fcv3uCBBMBpgQ25t_tmPcSMWpRc0Kms4-wZ8XxusJHYoMxM5mDXGkx3rczfUDIJ1zWCGhnbzMJ0B8aVAbOw8xg"/>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex gap-6">
+<div class="flex items-center gap-1.5 text-slate-400">
+<span class="material-symbols-outlined text-[20px] text-primary fill-1">favorite</span>
+<span class="text-xs">124</span>
+</div>
+<div class="flex items-center gap-1.5 text-slate-400">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+<span class="text-xs">12</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">share</span>
+</div>
+</div>
+</article>
+<article class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl overflow-hidden shadow-xl">
+<div class="p-5">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<img alt="User avatar" class="size-10 rounded-full object-cover" data-alt="Profile picture of a woman with braided hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIkHs7Yzx0NKm0ZwuIGJxaGKPip8O_TNC8m2-M0fmqlouLpzf2q__BOBofVsTwy6rxpXhGdiCxqTphgRvO8WHDhNYPMcyUbEjuoc23C8ezBuq6zF9WLkFqVYQ8OgJcGqU4yxON8ZGalFjXJxSShFmrE0lRY9Ccp0Y-BgYpQggdZCgayGl9jdJ90CriEGMJV4u9Z89fVyNVfJCag1xlrM3FM9lqt9cWNkrwFu00qsDctMyYsGhBiPtbNSVLubzFuCggN8QRvCmLr2c"/>
+<div>
+<p class="text-sm font-bold">Maya Rivers</p>
+<p class="text-[11px] text-slate-400">@maya_r • 2h ago</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400">more_horiz</span>
+</div>
+<div class="bg-primary/10 border border-primary/20 rounded-2xl p-4 mb-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<p class="text-xs font-bold text-primary">SAFETY TIP</p>
+</div>
+<p class="text-sm italic font-medium">
+                                "Always keep your 'SOS' gesture active on your phone. On iOS, quickly pressing the side button 5 times can call emergency services discreetly."
+                            </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex gap-6">
+<div class="flex items-center gap-1.5 text-slate-400">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+<span class="text-xs">892</span>
+</div>
+<div class="flex items-center gap-1.5 text-slate-400">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+<span class="text-xs">45</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">share</span>
+</div>
+</div>
+</article>
+<article class="bg-white/10 backdrop-blur-lg border border-white/10 rounded-3xl overflow-hidden shadow-xl">
+<div class="p-5">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-gradient-to-tr from-primary to-pink-300 p-0.5">
+<img alt="User avatar" class="size-full rounded-full object-cover border-2 border-background-dark" data-alt="Profile picture of a redheaded woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuLPBd-Mv2lY9yb8pKq-twB8-2ppOyeLN-8gOYgkAIZ4mCNSd0lR3TWzi2rugK4kbY1Fa4E1B6DF5V7_22NQNiEtot5z0eg9hfGWlxagf9_-2aw1BtCHxewymWmSV1rnWaNS__-PcjzJsSc_2Q-tiZudz71lyqz87CHtEJJLnIFMMuvNB0TyQS2KIMX8AOz3XIK6ohMKz1EDKgsct3rdVXRYytv5xhF3MNQQBY10dldHcOdskXBA9KxK1aVjpgN-LoEuvmINAOUZ0"/>
+</div>
+<div>
+<p class="text-sm font-bold">Sara Chen</p>
+<p class="text-[11px] text-slate-400">Checked in at <span class="text-primary font-medium">Central Station</span></p>
+</div>
+</div>
+<span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded-full">3h ago</span>
+</div>
+<div class="h-32 w-full rounded-2xl relative overflow-hidden mb-4 grayscale hover:grayscale-0 transition-all">
+<img alt="Map view" class="w-full h-full object-cover opacity-60" data-alt="Minimalist dark map of a city intersection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChyJdUrs0j0gcCO_JBbL94-LHUfs4hZJLsAlmvrtZORZNB-UmO9iOxB-VEnlZF0rQkYkyYwx04xQMPYV4xGZhAwK2ALeiaq3lu2SwbUmDjKGU8xH-5NTuA56PPprw9UZTDwUEWtaT065DXb38GeZ-ltSvhvfBgqZYOXMJgKXjZaBgeY_7Inl0Apea1LrG3fniqxmBo0lmL_HJXLqezzoBso79NO7WvJ-kVOe0MrcYsKbs8K0WC-a1kzyUOmAdmF9QYo0UH_Crr0Ng"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary size-4 rounded-full animate-ping opacity-75"></div>
+<div class="bg-primary size-2 rounded-full absolute"></div>
+</div>
+</div>
+<p class="text-xs text-slate-300">Station is very crowded right now, transit police are visible. Safe transit point!</p>
+</div>
+</article>
+</div>
+</main>
+<button class="absolute bottom-28 right-6 size-12 bg-white text-background-dark rounded-full flex items-center justify-center shadow-xl z-20">
+<span class="material-symbols-outlined">add</span>
+</button>
+<nav class="absolute bottom-0 w-full bg-background-dark/95 backdrop-blur-2xl border-t border-white/10 pb-8 pt-3 z-30">
+<div class="flex justify-between items-end px-6 max-w-md mx-auto relative">
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined text-[26px]">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined text-[26px]">notifications</span>
+<span class="text-[10px] font-medium">Updates</span>
+</a>
+<div class="relative -top-6 flex flex-col items-center">
+<button class="bg-primary size-16 rounded-full flex items-center justify-center shadow-[0_0_25px_rgba(238,43,140,0.4)] border-4 border-background-dark">
+<span class="material-symbols-outlined text-white text-[32px] fill-1">shield</span>
+</button>
+<span class="text-[10px] font-bold text-primary mt-2 uppercase tracking-wider">SOS</span>
+</div>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined text-[26px] fill-1">group</span>
+<span class="text-[10px] font-bold">Communities</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined text-[26px]">person</span>
+<span class="text-[10px] font-medium">You</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

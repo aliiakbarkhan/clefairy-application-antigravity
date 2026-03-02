@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clefairy Home Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b8c",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#221019",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .glass {
+            background: rgba(238, 43, 140, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(238, 43, 140, 0.2);
+        }
+        .glass-dark {
+            background: rgba(34, 16, 25, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(238, 43, 140, 0.2);
+        }
+        .nav-active {
+            color: #ee2b8c;
+        }
+        .nav-inactive {
+            color: #94a3b8;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen antialiased">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden pb-32">
+<header class="sticky top-0 z-50 glass-dark px-4 py-4 flex items-center justify-between border-b border-primary/10">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile avatar portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDSTjocatscqtRPwDTp6hyNzxT-3LUazCWqk31-PSL9MHhejzQ7c38oB9xhR3PaUygUy_T5s2XPKlhfRyt80uISvGh9Yd1ULMItT97-MtK3jDG7t666Ywtc8lqM14vr_CquMq3-NPCVmQDWUpZDpI2rm0a4vlAQiBVb0xWTed8TXcFpedNcbDoKpch47snPtiEzaRcOaXcsB9hsv1jsAfNrvmJ4qFVLjSCzqH2JxQGeVTT3ZWujmsleyQGrTkgyX_vcBo-PtBtJXs"/>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-wider text-primary font-bold">Welcome back</p>
+<h2 class="text-lg font-bold leading-tight">Clefairy</h2>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="size-10 glass rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<div class="px-4 py-6">
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-primary">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="block w-full pl-12 pr-4 py-4 bg-primary/5 dark:bg-primary/10 border-none rounded-xl focus:ring-2 focus:ring-primary/50 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 transition-all" placeholder="Ready to go..." type="text"/>
+</div>
+</div>
+<div class="px-4 mb-8">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-lg font-bold">Government Schemes</h3>
+<button class="text-sm font-semibold text-primary">View All</button>
+</div>
+<div class="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scrollbar-hide [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="min-w-[85%] snap-center">
+<div class="relative h-48 rounded-xl overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Support center for women illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD75LnOcNlo0BS3P8WeW3kI85ejkGs7LdHPqF7fwuwyrt5V2prhmDuueEq-ADkNayJzRsBoXutDVB-nC9B9NBXFKAW6hk7VeAfaTFvx8ZGUoTIAlrR_BHIcxcJQvOdns7zTVU146j6Hz2lGrcU5FCy6CdAtUjwhWYOoOIqeI_qT1zCwJPvTLDqqEqp7UnMZcoSopzt-35NPkwOF_UkeyS6-8dodMQP-LaYnlkRbxI8iXT7rN1Bcy4yYa_61uLD7s5e5nmAgMgqdNP4"/>
+<div class="absolute bottom-0 left-0 p-4 z-20">
+<span class="px-2 py-1 bg-primary rounded text-[10px] font-bold text-white uppercase mb-2 inline-block">Support</span>
+<h4 class="text-white font-bold text-lg">One Stop Centre (OSC)</h4>
+<p class="text-slate-200 text-sm">Comprehensive support for women in need</p>
+</div>
+</div>
+</div>
+<div class="min-w-[85%] snap-center">
+<div class="relative h-48 rounded-xl overflow-hidden group border border-primary/20">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Girl child empowerment educational poster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2XNik_itpcbBitpWOVbfBHaWoqn1TsyAycCyk1kZ0wl8_VcN_EMPsLO-JI_YkTIaw9i8jgbH8O_GpMGmUzfTIZDSHiN5hdxl97HvtB988GLO0bujeJThV2wdFA1HYNgzB5eiiXwcPZIIQCRaZCuXFeBBNm8zCEa1FYfexvP37vFBnwsxSH9BbiBotpfJ2kAAmSU-D7XkVjiT5QiVWN61sTQuFpkVMm48fBQqF9VmUKHBRWlERwJx6ODkwa0rbZbR9NsJ_jRGBKDc"/>
+<div class="absolute bottom-0 left-0 p-4 z-20">
+<span class="px-2 py-1 bg-primary rounded text-[10px] font-bold text-white uppercase mb-2 inline-block">Empowerment</span>
+<h4 class="text-white font-bold text-lg">Beti Bachao Beti Padhao</h4>
+<p class="text-slate-200 text-sm">Empowering the future through education</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 mb-8">
+<div class="glass-dark border-primary/10 p-5 rounded-xl flex items-start gap-4">
+<div class="bg-primary/20 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined">encrypted</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-slate-100">Security Notice</h4>
+<p class="text-slate-400 text-sm mb-3">Personal messages are end-to-end encrypted for your privacy.</p>
+<a class="text-primary text-sm font-bold flex items-center gap-1 group" href="#">
+                        Learn more
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="px-4 mb-20">
+<h3 class="text-lg font-bold mb-4">Safety Quick Access</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="glass p-4 rounded-xl flex flex-col gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">sos</span>
+<p class="font-bold">SOS Trigger</p>
+<p class="text-xs text-slate-400">Instant emergency alert</p>
+</div>
+<div class="glass p-4 rounded-xl flex flex-col gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+<p class="font-bold">Live Track</p>
+<p class="text-xs text-slate-400">Share journey status</p>
+</div>
+</div>
+</div>
+<button class="fixed bottom-28 right-4 bg-primary text-white flex items-center gap-2 px-6 py-4 rounded-full shadow-lg shadow-primary/40 z-40 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-bold">Ask Sakhi AI</span>
+</button>
+<nav class="fixed bottom-0 left-0 right-0 glass-dark px-6 pb-8 pt-3 z-50">
+<div class="flex justify-between items-center max-w-lg mx-auto relative">
+<a class="flex flex-col items-center gap-1 flex-1 nav-active" href="#">
+<span class="material-symbols-outlined fill-1">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 flex-1 nav-inactive" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="text-[10px] font-bold">Updates</span>
+</a>
+<div class="flex-1 flex justify-center -mt-12">
+<a class="size-16 bg-primary rounded-full flex items-center justify-center shadow-lg shadow-primary/40 border-4 border-background-dark" href="#">
+<span class="material-symbols-outlined text-white text-3xl font-bold">sos</span>
+</a>
+</div>
+<a class="flex flex-col items-center gap-1 flex-1 nav-inactive" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[10px] font-bold">Communities</span>
+</a>
+<a class="flex flex-col items-center gap-1 flex-1 nav-inactive" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold">You</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>
