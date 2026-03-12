@@ -1,6 +1,9 @@
 
-# ✨ Clefairy Mobile Application (Flutter)
+# Clefairy Mobile Application - Flutter
 
+<img src ="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12cbe8a4-f55c-4b40-85bb-d8e1405e7b84/dl704tk-450fbce7-231d-4e05-bdce-d96bd5bf5047.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8xMmNiZThhNC1mNTVjLTRiNDAtODViYi1kOGUxNDA1ZTdiODQvZGw3MDR0ay00NTBmYmNlNy0yMzFkLTRlMDUtYmRjZS1kOTZiZDViZjUwNDcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.1dKEVPtafB3yF-nK35_9qvCbfGroFY1IdNs_-jsXpEo" />
+
+## Overview
 **Clefairy** is a modern **Flutter mobile application** built using the **Antigravity development workflow**.  
 The project focuses on building a smooth, responsive, and visually clean mobile experience while maintaining scalable Flutter architecture.
 
@@ -8,18 +11,18 @@ Clefairy demonstrates how modern mobile applications can be designed with **effi
 
 ---
 
-# 🚀 Features
+## Features
 
-- 📱 **Modern Flutter UI**
-- ⚡ **Fast and responsive navigation**
-- 🧩 **Modular component-based architecture**
-- 🎨 **Clean Material UI design**
-- 🔧 **Scalable project structure**
-- 🧠 **Antigravity-assisted development workflow**
+-  **Modern Flutter UI**
+-  **Fast and responsive navigation**
+-  **Modular component-based architecture**
+-  **Clean Material UI design**
+-  **Scalable project structure**
+-  **Antigravity-assisted development workflow**
 
 ---
 
-# 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -30,7 +33,7 @@ Clefairy demonstrates how modern mobile applications can be designed with **effi
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```
 clefairy-application-antigravity
@@ -59,27 +62,27 @@ clefairy-application-antigravity
 
 ---
 
-# ⚙️ Installation
+## ⚙️ Installation
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/aliiakbarkhan/clefairy-application-antigravity.git
 ```
 
-### 2️⃣ Navigate to the Project
+### Navigate to the Project
 
 ```bash
 cd clefairy-application-antigravity
 ```
 
-### 3️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 flutter pub get
 ```
 
-### 4️⃣ Run the Application
+### Run the Application
 
 ```bash
 flutter run
@@ -87,39 +90,25 @@ flutter run
 
 ---
 
-# 📸 Screenshots
+## Screenshots
 
 ```
 /screenshots/home.png
 /screenshots/dashboard.png
 /screenshots/settings.png
 ```
+---
+
+## Contribution
+If you'd like to contribute to the project, feel free to fork the repository and suggest improvements via **issues** or **pull requests**.
 
 ---
 
-# 🎯 Future Improvements
+## Contact
+For any questions or feedback, feel free to reach out:
 
-- Dark mode support
-- Authentication system
-- Cloud sync
-- Improved UI animations
-- Additional feature modules
+https://github.com/user-attachments/assets/af7a9530-cbef-4cb4-8f47-7d2a0691824d
 
----
 
-# 👨‍💻 Author
-
-**Ali Akbar Khan**
-
-GitHub:  
-👉 https://github.com/aliiakbarkhan
-
----
-
-# ⭐ Support
-
-If you like this project:
-
-- ⭐ Star the repository  
-- 🍴 Fork it  
-- 🧑‍💻 Contribute to improve it  
+- **Email**: aliakbarkhana79@gmail.com
+- **LinkedIn**: [aliiakbarkhan](https://www.linkedin.com/in/aliiakbarkhan)
